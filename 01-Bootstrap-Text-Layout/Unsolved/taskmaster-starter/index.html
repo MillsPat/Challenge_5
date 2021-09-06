@@ -18,80 +18,38 @@
     <header class="col-12 col-lg-3 bg-dark text-light sticky-top d-flex flex-column p-4 p-lg-3">
       <h1 class="text-center">Calendar Pro Edition</h1>
       <button id="create-task" class="btn btn-block btn-success" data-toggle="modal" data-target="#task-form-modal">Add
-        Event</button>
-      <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Events</button>
-      <p class="mt-auto d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas architecto ipsa
-        excepturi aut non
-        laudantium sequi fugit officiis optio deleniti asperiores rem eius laborum maxime blanditiis culpa, quis iste?
+        Calendar Event</button>
+      <button id="remove-tasks" class="btn btn-block btn-danger">Delete All Calendar Events</button>
+      <p class="mt-auto d-none d-lg-block">This is to be used as a personal scheduling tool and not regarded as a tool for any professional entity
       </p>
     </header>
     <main class="col-12 col-lg-9 d-flex flex-column">
       <div class="m-5 row justify-content-around">
 
+
+
+
+        
         <!-- todo start -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-          <h4 class="card-header bg-dark text-light">
-            To Do
-          </h4>
+        <div class="w-100 bg-blue p-3 text-center text-light display-4">
+
+        <div class="card">
+          <h1 class="card-header bg-dark text-light">
+            Schedule
+          </h1>
           <ul id="list-toDo" class="list-group list-group-flush">
             <li class="list-group-item">
               <span class="badge badge-primary badge-pill"></span>
-              <p classs="m-1"></p>
             </li>
             </ul>
         </div>
         </div>
         <!-- todo end -->
-        <!-- in progress start -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light">
-              In Progress
-            </h4>
-          <ul id="list-inProgress" class="list-group">
-            <li class="list-group-item">
-              <span class="badge badge-primary badge-pill"></span>
-              <p class="m-1"></p>
-            </li>
-          </ul>
-        </div>
-        </div>
-        <!-- in progress end -->
-        <!-- in review start -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light">
-              In Review
-            </h4>
-          <ul id="list-inReview" class="list-group">
-            <li class="list-group-item">
-              <span class="badge badge-primary badge-pill"></span>
-              <p class="m-1"></p>
-            </li>
-          </ul>
-        </div>
-        </div>
-        <!-- in review end -->
-        <!-- done start -->
-        <div class="col-12 col-md-6 col-xl-3 mb-3">
-          <div class="card">
-            <h4 class="card-header bg-dark text-light">
-              Done
-            </h4>
-          <ul id="list-done" class="list-group">
-            <li class="list-group-item">
-              <span class="badge badge-primary badge-pill"></span>
-              <p class="m-1"></p>
-            </li>
-          </ul>
-        </div>
-        </div>
-        <!-- done end -->
+        
       </div>
       <div id="trash">
-        <div class="w-100 bg-danger p-3 text-center text-light display-4">
-          Drop Here to Remove.
+        <div class="w-100 bg-danger p-6 text-center text-bold display-6">
+          🔥Fire Designs🔥
         </div>
       </div>
   </div>
@@ -104,7 +62,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="task-form-modal">Add New Task</h5>
+          <h5 class="modal-title" id="task-form-modal">Add New Event</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -112,12 +70,12 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="modalTaskDescription">Task description</label>
-              <textarea id="modalTaskDescription" rows="3" class="form-control"></textarea>
+              <label for="modalTaskDescription">Event Description</label>
+              <textarea id="modalTaskDescription" rows="3" text="bold" class="form-control"></textarea>
             </div>
             <div class="form-group">
-              <label for="modalDueDate">Due date</label>
-              <input type="text" class="form-control" id="modalDueDate" placeholder="mm/dd/yyyy" autocomplete="off">
+              <label for="modalDueDate">Event Time - Event Title</label>
+              <input type="text" class="dropdown-toggle" id="modalDueDate" placeholder="Event Time-Event Title" autocomplete="off">
             </div>
           </form>
         </div>
